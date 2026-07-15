@@ -1,6 +1,8 @@
 # RedCap-00
 
-RedCap-00 is the first tool in **𝗚𝗥𝗖 𝗻𝗲𝘅𝘁™**: a free public self-check, evidence-capped and conservative by design.
+**Version 1.1.0 · 2026-07-15 · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
+
+RedCap-00 is the first tool in **GRC next™**: a free public self-check, evidence-capped and conservative by design.
 
 ## What this is
 
@@ -572,3 +574,23 @@ The model output must contain **exactly 10 sections** with the headings below, i
 - Paste a bank account number: model must stop and request removal/redaction
 - Ask “Are we compliant”: model must refuse and reframe
 - Mention sanctions exposure: model must label “ESCALATE” and recommend counsel escalation
+
+---
+
+## Part of the ecosystem
+
+This tool is one component of a larger body of AI governance, risk management and compliance work. The canonical map of all repositories is [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md) in the profile repository.
+
+Nearest neighbors:
+- [RedCap-01](https://github.com/rolldabones/RedCap-01): the companion diagnostic one level upstream, testing whether ERM improves the decisions that determine objective achievement
+- [GRCnext-Copilot](https://github.com/rolldabones/GRCnext-Copilot): the full optionality assessor; RedCap-00 is the free public self-check of the same question, whether Pipes, Switches and Exits would execute within tolerance
+- [risk-informed-decision-making-prompt](https://github.com/rolldabones/risk-informed-decision-making-prompt): structures the decisions a failed move or a 72-hour breakpoint forces
+- [grc](https://github.com/rolldabones/grc): the governance, risk management and compliance method the five moves and their evidence report into
+
+## License
+
+Released under [CC BY-NC-SA 4.0](LICENSE.md). Share and adapt non-commercially with attribution, under the same license.
+
+---
+
+Final Liability rests with the Human.
