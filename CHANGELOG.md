@@ -2,6 +2,18 @@
 
 All notable changes to this repository are documented here. Versioning follows [Semantic Versioning](https://semver.org/). The README and this file version in lockstep; prior versions are superseded, never silently overwritten.
 
+## v1.1.1 (2026-07-30)
+
+Patch release. Trademark rendering only.
+
+### Changed
+- Trademark rendering corrected to the canonical closed-up form GRCnext™. The retired spaced form "GRC next" is withdrawn from repository prose. One occurrence, in the opening description line.
+- Version line updated in lockstep.
+
+### Unchanged
+- The instruction block under Build guide for custom GPT mirrors the deployed RedCap-00 Custom GPT and retains the spaced form as deployed. Correcting it here would break the mirror rule. It is carried as a documented pending production change and re-dates when the live GPT is edited.
+- The v1.1.0 entry below records the earlier Unicode-bold heading fix in its original wording. Historical entries are not rewritten.
+
 ## v1.1.0 (2026-07-15)
 
 First versioned release under the repository improvement program. The pre-existing README is treated as implicit v1.0.0.
