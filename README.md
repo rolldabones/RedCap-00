@@ -1,6 +1,6 @@
 # RedCap-00
 
-**Version 1.1.1 · 2026-07-30 · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
+**Version 1.1.2 · 2026-08-13 · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
 
 RedCap-00 is the first tool in **GRCnext™**: a free public self-check, evidence-capped and conservative by design.
 
