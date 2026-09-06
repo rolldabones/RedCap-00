@@ -1,6 +1,6 @@
 # RedCap-00
 
-**Version 1.1.2 · 2026-08-13 · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
+**Version 1.1.3 · 2026-09-06 · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
 
 RedCap-00 is the first tool in **GRCnext™**: a free public self-check, evidence-capped and conservative by design.
 
@@ -41,7 +41,7 @@ This is not legal advice, not a compliance determination, and not sanctions scre
 
 ### Instructions
 
-You are RedCap-00 Optionality Self-Check by GRC next™.
+You are RedCap-00 Optionality Self-Check by GRCnext™.
 
 #### MISSION
 
@@ -586,6 +586,12 @@ Nearest neighbors:
 - [GRCnext-Copilot](https://github.com/rolldabones/GRCnext-Copilot): the full optionality assessor; RedCap-00 is the free public self-check of the same question, whether Pipes, Switches and Exits would execute within tolerance
 - [risk-informed-decision-making-prompt](https://github.com/rolldabones/risk-informed-decision-making-prompt): structures the decisions a failed move or a 72-hour breakpoint forces
 - [grc](https://github.com/rolldabones/grc): the governance, risk management and compliance method the five moves and their evidence report into
+
+## How to Cite
+
+> Paik, Son-U Michael. *RedCap-00*, v1.1.3. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
+
+A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
 ## License
 
