@@ -1,12 +1,12 @@
 # RedCap-00
 
-**Version 1.1.3 · 2026-09-06 · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
+**Version 1.1.4 · 2026-10-05 · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
 
 RedCap-00 is the first tool in **GRCnext™**: a free public self-check, evidence-capped and conservative by design.
 
 ## What this is
 
-RedCap-00 is a free self-check to evaluate whether your organization can make real operational choices inside 72 hours under disruption. It focuses on five moves: safe pause, treasury reroute, data switchboard, substitution of critical dependencies, and clean market exit.
+RedCap-00 is a free self-check to evaluate whether your organization can make real operational choices inside 72 hours under disruption. It focuses on five moves: safe pause, treasury reroute, data switchboard, substitution of critical dependencies and clean market exit. This repository links no hosted instance of the self-check: to run it, build it from the [build guide](#build-guide-for-custom-gpt) below.
 
 ## How to use it well
 
@@ -16,7 +16,7 @@ Answer using high-level summaries. For each question, pick A–D and an evidence
   - **A** = ad hoc or unknown
   - **B** = partial or informal
   - **C** = documented and owned
-  - **D** = tested in the last 12 months with logs and follow-up actions
+  - **D** = tested in the last 12 months with logs and follow-up actions, with alternates viable and approvals and communications ready
 - **Evidence levels**
   - **E0** no evidence
   - **E1** verbal only
@@ -27,17 +27,23 @@ The tool scores conservatively and applies evidence-capped scoring when evidence
 
 ## What not to paste
 
-Do not paste confidential information, personal data, credentials, bank details, wiring instructions, sensitive contract text, regulator correspondence, or security vulnerabilities. Use redacted summaries only.
+Do not paste confidential information, personal data, credentials, bank details, wiring instructions, sensitive contract text, regulator correspondence or security vulnerabilities. Use redacted summaries only.
 
 ## What you get
 
-A board-ready packet: scorecard, evidence index, 72-hour breakpoints, top blockers with fixes, and a 30/60/90-day plan, plus a simple drill script. In Deepening mode, the tool also runs a short 72-hour tabletop simulation to reveal breakpoints.
+A board-ready packet: scorecard, evidence index, 72-hour breakpoints, top blockers with fixes and a 30/60/90-day plan, plus a simple drill script. In Deepening mode, the tool also runs a short 72-hour tabletop simulation to reveal breakpoints.
 
 ## Limitations
 
-This is not legal advice, not a compliance determination, and not sanctions screening. Jurisdiction is treated as unknown unless you specify it. Final liability rests with the Human.
+This is not legal advice, not a compliance determination and not sanctions screening. Jurisdiction is treated as unknown unless you specify it. Final Liability rests with the Human.
 
 ## Build guide for custom GPT
+
+> **Retirement notice, 5 October 2026 (KST).** OpenAI is retiring custom GPTs. Its [Custom GPT retirement and migration FAQ](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq), read on 5 October 2026, states that custom GPTs are scheduled to retire on **11 December 2026**, or 11 February 2027 for Enterprise workspaces with an approved deferral, and that a migrated GPT stays usable until retirement but becomes read-only. The RedCap-00 custom GPT was converted to a ChatGPT plugin on 1 October 2026, and the plugin is private and not publicly listed. This repository carries no link to the GPT, so no link here breaks.
+>
+> Everything needed to build your own stays published here: the instruction block and the Reference file. OpenAI's replacement is the ChatGPT plugin, in which a GPT's instructions become a Skill and its knowledge files become reference files. Its [Plugins in ChatGPT and Codex](https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex) article, read on 28 September 2026 and not re-read since, offers plugin creation in supported ChatGPT Business and Enterprise workspaces, so check what your plan allows. The instruction block is not tied to ChatGPT and also serves as the custom instructions of any assistant that accepts them. A plugin does not inherit a GPT's selected model and custom actions do not transfer, so choose the model yourself and test before you rely on the output.
+
+The Instructions block below mirrors the RedCap-00 custom GPT and is edited here only to follow a change made in production; the one known exception is recorded in [CHANGELOG.md](CHANGELOG.md) at v1.1.4. The Reference file is the Knowledge file that block names.
 
 ### Instructions
 
@@ -93,6 +99,8 @@ Always use “Unknown/Insufficient data” when evidence is weak.
 End output with version string from the reference.
 
 ## What to put in the Knowledge “Reference” file
+
+The Reference file is everything from the `RedCap-00_Reference_v0.1.md` heading below to the end of section 10.3; it stops before Part of the ecosystem. Its `v0.1` is the pack's own version string, printed in the output footer, and is separate from this repository's version.
 
 ### RedCap-00_Reference_v0.1.md
 
@@ -589,7 +597,7 @@ Nearest neighbors:
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-00*, v1.1.3. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
+> Paik, Son-U Michael. *RedCap-00*, v1.1.4. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 

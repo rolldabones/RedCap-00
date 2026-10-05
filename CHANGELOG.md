@@ -1,6 +1,20 @@
 # Changelog
 
-All notable changes to this repository are documented here. Versioning follows [Semantic Versioning](https://semver.org/). The README and this file version in lockstep; prior versions are superseded, never silently overwritten.
+All notable changes to this repository are documented here. Versioning follows [Semantic Versioning](https://semver.org/). The README, `CITATION.cff` and this file version in lockstep; prior versions are superseded, never silently overwritten.
+
+## v1.1.4 (2026-10-05)
+
+Retirement notice, and the first slot of the continuous improvement rotation. Patch: companions and corrections only. The self-check, the Instructions block and the Reference file are unchanged.
+
+- **Retirement notice added** under Build guide for custom GPT. The RedCap-00 custom GPT was converted to a private ChatGPT plugin on 1 October 2026. OpenAI's Custom GPT retirement and migration FAQ, read on 5 October 2026, gives 11 December 2026 as the retirement date and states that a migrated GPT stays usable until then but becomes read-only. The account's notices of 28 September 2026 reached six repositories and not this one, because this repository recorded its deployed GPT in this file (v1.1.0, v1.1.1) and nowhere in the README. The notice's sentence on which workspaces can create plugins is carried at its 28 September 2026 read date; the plugins article returned a server error twice on 5 October 2026.
+- **The README now says the Instructions block is a mirror.** Until this release that rule lived only in this file.
+- **Correction to the record, itemized separately.** The v1.1.1 entry says the instruction block retains the retired spaced form of the mark as deployed and that correcting it would break the mirror rule. The v1.1.3 entry corrected that same line as live text and did not say that it superseded the v1.1.1 statement. It did. Whether the same edit was made in the GPT before it became read-only is Unknown, so the first instruction line may differ from the deployed GPT by that one token. Both entries are shipped history and are unchanged.
+- **Doctrine rendering:** Limitations read "Final liability rests with the Human." It now carries the capital L of the closing line and of `DOCTRINE.md` section 3.
+- **House style:** four serial commas removed from the author's own prose, in What this is, What not to paste, What you get and Limitations. The Instructions block and the Reference file are untouched, their serial commas included.
+- **Entry path:** What this is now says that this repository links no hosted instance and points to the build guide. How to use it well gives D the Reference file's fuller wording, so that D and E3 no longer read identically.
+- **Reference file boundary stated,** with a note that `v0.1` is the pack's own version string and is separate from the repository version.
+- **Lockstep sentence** at the head of this file now names `CITATION.cff`, which has moved with the README since v1.1.3.
+- Masthead, How to Cite and `CITATION.cff` move to this release in lockstep. `LICENSE.md` is unchanged byte for byte.
 
 ## v1.1.3 (2026-09-06)
 
