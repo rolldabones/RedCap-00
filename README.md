@@ -1,6 +1,6 @@
 # RedCap-00
 
-**Version 1.2.0 · 18 October 2026 · Instrument, formerly the RedCap-00 custom GPT (retired 1 October 2026) · Instructions last mirrored from the GPT on 15 July 2026 (no verification date recorded), before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
+**Version 1.2.1 · 18 October 2026 · Instrument, formerly the RedCap-00 custom GPT (retired 1 October 2026) · Instructions last mirrored from the GPT on 15 July 2026 (no verification date recorded), before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
 
 > **Retired 1 October 2026 (KST).** The RedCap-00 custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -49,10 +49,11 @@ This is not legal advice, not a compliance determination and not sanctions scree
 - [reference.md](reference.md): the Reference Pack (question bank, scoring, confidence, tabletop, output schema)
 - [example.md](example.md): one illustrative Fast Baseline run on a fictional organization, with the scorecard arithmetic
 - [tests.md](tests.md): the regression harness, the scoring defects fixed in v1.2.0 and the run record
+- [evidence/transcripts-2026-10-18-T5/](evidence/transcripts-2026-10-18-T5/README.md): the transcripts of run T5, copied byte for byte
 
 ## Change control
 
-The configuration is Locked as of 1 October 2026. Changes are made in `instructions.md` and `reference.md` under this repository's version rule (Semantic Versioning; the README, `CITATION.cff` and `CHANGELOG.md` move in lockstep). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in `tests.md`. The v1.2.0 block fixes seven scoring defects (R1 to R7, listed in `tests.md` with their old wording and a case proving each fix) and awaits that run.
+The configuration is Locked as of 1 October 2026. Changes are made in `instructions.md` and `reference.md` under this repository's version rule (Semantic Versioning; the README, `CITATION.cff` and `CHANGELOG.md` move in lockstep). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in `tests.md`. The block fixes seven scoring defects (R1 to R7, listed in `tests.md` with their old wording and a case proving each fix). Its first logged run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, reproduced every expected score and confidence and failed the section 2 bullet cap in both modes (known defect K1); it is not accepted, pending review (`tests.md`, Last run).
 
 ## Part of the ecosystem
 
@@ -66,7 +67,7 @@ Nearest neighbors:
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-00*, v1.2.0. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
+> Paik, Son-U Michael. *RedCap-00*, v1.2.1. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 

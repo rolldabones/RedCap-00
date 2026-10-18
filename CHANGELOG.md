@@ -2,6 +2,25 @@
 
 All notable changes to this repository are documented here. Versioning follows [Semantic Versioning](https://semver.org/). The README, `CITATION.cff` and this file version in lockstep; prior versions are superseded, never silently overwritten.
 
+## v1.2.1 (2026-10-18, KST)
+
+Records-only patch: the ruling 9 logged run. Session T5 of the whole-account review of 15 October 2026 (doc section 5, RedCap-00 harness row; the T5 row of the session plan, ruling 9 runs added 18 October 2026). No wording of `instructions.md`, `reference.md` or `example.md` changes; the instruction block, the Reference Pack and the output footer stay at v1.2.0, the release at which they last changed.
+
+### What changed and why
+- **The ruling 9 run (README Change control: "A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in `tests.md`").** The harness in `tests.md` was encoded as 26 cases: Tests A to E (section 2), the fifteen fixed-defect cases R1a to R7-5 (section 4), the four refusal and safety tests (section 3; the missing Reference Pack test runs with `instructions.md` alone) and the five format checks (section 1) as one case per mode, the Fast Baseline case on the fictional input published in `example.md`. Each scoring case supplies the whole intake, the answers and the consistency checks in one turn, and passes only on the score and confidence the table computes. Tested model `claude-opus-5-5`, the block and `reference.md` as the system prompt; scored by `claude-sonnet-5-5`, a different model. **Result:** scorer 24 PASS, 2 FAIL (FMT-FB, FMT-DP, both on check F2, the section 2 cap of five bullets); every expected score and confidence reproduced (20 of 20). Session review of the two FAILs: FMT-FB concur, instrument defect (the cap does not say whether nested bullets count; new known defect K1, not fixed in this release because a changed Reference Pack needs its own run); FMT-DP concur, model behavior (six top-level bullets). Not accepted: open cases FMT-FB and FMT-DP; reviewer pending (Michael Paik). Observation: turn 1 of Test-B and Test-E stopped with stop_reason `refusal`; cause Unknown.
+- **Evidence.** `evidence/transcripts-2026-10-18-T5/`: the 26 transcripts copied byte for byte with the closing line appended, the runner's `summary.json` and an index.
+- **`tests.md`:** Last run section (configuration, per-case table, counts, acceptance) and known defect K1; header to v1.2.1. README: Change control sentence and Files list.
+- README masthead, How to Cite, `CITATION.cff` and this file move to v1.2.1 in lockstep.
+
+### Findings by class
+- Confirmed: no run record (doc section 5); the run is the fix. New from the run: K1 (instrument defect).
+- Already fixed in v1.2.0: R1 to R7, Test B, the uncomputable evidence cap and the asymmetric prerequisite caps (doc section 5 row; section 4 item 5).
+- Not reproducible: none. Outside the review: none edited.
+
+### Deferred
+- K1, the bullet-cap wording in reference.md section 9: an instrument change, for a later release with its own run.
+- Acceptance: Michael Paik's review of the run.
+
 ## v1.2.0 (2026-10-18, KST)
 
 Minor release: Reference split, R1 to R7 fixed, evidence scale numbered, worked scorecard. Session T4 of the whole-account review of 15 October 2026 (doc section 4, item 5, and items 2 and 3 as the template; reviewer report 11, items R1 to R7, A9, A13, B1, B3, B4, C1, C3 and idea 3), under determination D5 and ruling 9. Dated amendment, 18 October 2026 (KST); no earlier entry is re-dated or rewritten.

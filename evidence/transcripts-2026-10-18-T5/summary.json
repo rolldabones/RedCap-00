@@ -1,0 +1,145 @@
+{
+ "suite": "redcap-00",
+ "repo": "RedCap-00",
+ "head": "53b4a82",
+ "system_files": {
+  "../Claude outputs/T5-runs/suites/blocks/RedCap-00-instructions.txt": "89184c0a0d8e7c0b6971ff1d07fe36d97512aba8eecfe9057521bf12a5dc9dd1",
+  "reference.md": "460a23d66931c64a6170780e3d826f34a639705bf857dc1e938b2714a75cc86d"
+ },
+ "tested_model": "claude-opus-5-5",
+ "scorer_model": "claude-sonnet-5-5",
+ "max_tokens": 16000,
+ "finished": "2026-10-18T10:44+09:00",
+ "results": [
+  {
+   "case": "FMT-DP",
+   "verdict": "FAIL",
+   "truncated": false
+  },
+  {
+   "case": "FMT-FB",
+   "verdict": "FAIL",
+   "truncated": false
+  },
+  {
+   "case": "R1a",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "R1b",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "R2",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "R3a",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "R3b",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "R5a",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "R5b",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "R5c",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "R6a",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "R6b",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "R7-1",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "R7-2",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "R7-3",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "R7-4",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "R7-5",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "S1",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "S2",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "S3",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "S4",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "Test-A",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "Test-B",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "Test-C",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "Test-D",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "Test-E",
+   "verdict": "PASS",
+   "truncated": false
+  }
+ ]
+}

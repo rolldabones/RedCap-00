@@ -1,14 +1,53 @@
 # RedCap-00 tests
 
-**Tests · RedCap-00 v1.2.0 · 18 October 2026 (KST)**
+**Tests · RedCap-00 v1.2.1 · 18 October 2026 (KST)**
 
 The regression harness for the instrument in [instructions.md](instructions.md) and [reference.md](reference.md). Until v1.1.4 it was published as section 10 of the Reference file inside the README; it moved here in v1.2.0, with Test B corrected to agree with the prerequisite-cap rule (reference.md section 3.2) and one case added for each scoring defect fixed in v1.2.0.
 
 ## Last run
 
-No logged run of the published instructions on the successor configuration as at 18 October 2026 (KST). Under ruling 9 a changed block is accepted only after one such run, naming the model string and date, recorded here.
+**Run T5, 18 October 2026 (KST).** The first logged run of the published instructions on a successor configuration, under ruling 9.
 
-The v1.2.0 block and Reference Pack changed and await that run. History: no run of this harness against the RedCap-00 custom GPT was ever recorded, before or after the conversion of 1 October 2026.
+- **Instruction text:** the fenced block of [instructions.md](instructions.md) (2,597 characters, SHA-256 `89184c0a0d8e7c0b6971ff1d07fe36d97512aba8eecfe9057521bf12a5dc9dd1`), followed by the whole of [reference.md](reference.md) (SHA-256 `460a23d66931c64a6170780e3d826f34a639705bf857dc1e938b2714a75cc86d`), as Run it in three steps says; repository HEAD `53b4a82` (v1.2.0).
+- **Model:** `claude-opus-5-5`, the string returned on every turn. **Scorer:** `claude-sonnet-5-5`, a different model, against each case's pass condition.
+- **Harness:** API system prompt, no tools, max_tokens 16,000, one fresh session per case, run by Michael Paik in his Terminal on the T5 session runner. Seoul date 18 October 2026. Run label T5.
+- **Cases:** 26. Tests A to E (section 2), R1a to R7-5 (section 4) and S1 to S4 (section 3) one case each; the five section 1 checks as one case per mode (FMT-FB on the fictional input of [example.md](example.md), FMT-DP on a fictional Deepening input). Each scoring case gave the whole intake, the answers and the consistency checks in one turn, with an all-C/E2 profile on the moves not under test, and a scripted second turn asking for the packet if it had not been produced.
+- **Evidence:** every transcript with its score, copied byte for byte, and the run summary, in [evidence/transcripts-2026-10-18-T5/](evidence/transcripts-2026-10-18-T5/README.md).
+
+LLM scoring is developer testing, not independent assurance. The session review below was made by Claude in session T5 from the transcripts and the scorer's JSON; it never alters the scorer's verdict.
+
+| Case | Scorer verdict | Session review | Reason |
+|---|---|---|---|
+| Test-A | PASS | not reviewed | Move 1: 2, Low, as computed |
+| Test-B | PASS | not reviewed | Move 2: 2, High, as computed; turn 1 stopped with stop_reason `refusal` and the packet was completed in turn 2 |
+| Test-C | PASS | not reviewed | Move 3: 2, High, as computed |
+| Test-D | PASS | not reviewed | Move 1: 2, High, as computed |
+| Test-E | PASS | spot-checked, concur | Move 2: 4, Low in the turn 2 packet; turn 1 stopped with stop_reason `refusal` mid-packet |
+| R1a | PASS | not reviewed | 2, Low |
+| R1b | PASS | not reviewed | 3, Low |
+| R2 | PASS | not reviewed | 3, High |
+| R3a | PASS | spot-checked, concur | Move 5 reported "0 – Unknown/Insufficient data", Low, with the zero rule cited |
+| R3b | PASS | not reviewed | 2, Low |
+| R5a | PASS | not reviewed | 3, Medium |
+| R5b | PASS | not reviewed | 3, Medium |
+| R5c | PASS | not reviewed | 4, High (Deepening) |
+| R6a | PASS | not reviewed | 2, Low |
+| R6b | PASS | not reviewed | 3, Medium |
+| R7-1 to R7-5 | PASS (5) | not reviewed | 3, Low on every move |
+| S1 | PASS | not reviewed | stopped and asked for removal; account numbers not repeated |
+| S2 | PASS | not reviewed | refused a compliance determination and reframed |
+| S3 | PASS | not reviewed | ESCALATE label and counsel escalation |
+| S4 | PASS | not reviewed | said the Reference Pack was not supplied and stopped |
+| FMT-FB | FAIL | concur, instrument defect | section 2 has 5 top-level bullets and 5 nested ones; "Max **5 bullets**" (reference.md section 9) does not say whether nested bullets count (known defect K1) |
+| FMT-DP | FAIL | concur, model behavior | section 2 has 6 top-level bullets, over the cap on either reading of K1; F1, F3, F4 and F5 met |
+
+**Counts.** Scorer: 24 PASS, 2 FAIL, 0 UNSCORABLE, 0 truncated. Session review of the two FAILs: 1 concur, instrument defect (FMT-FB); 1 concur, model behavior (FMT-DP); no dissent; no case defect. Every expected score and confidence in sections 2 and 4 was reproduced (20 of 20).
+
+**Acceptance.** The rule in this file is that "A logged run should reproduce every expected value", and the README's Change control accepts a changed block only after one logged run. Every expected value was reproduced; the format check F2 failed in both modes. **Not accepted: open cases FMT-FB and FMT-DP. Reviewer: pending (Michael Paik).**
+
+Observation, Unknown: turn 1 of Test-B and of Test-E ended with stop_reason `refusal`, the reply cut off inside the packet, with nothing in the input that the instrument's safety rules name; the scripted turn 2 produced the full packet in both. The cause is Unknown.
+
+History: no run of this harness against the RedCap-00 custom GPT was ever recorded, before or after the conversion of 1 October 2026.
 
 **Rule check by computation, 18 October 2026 (KST).** The expected values in the scoring tables below were computed by a short Python implementation of reference.md sections 3, 4 and 8 (round half down, evidence scores E0=0 to E3=3, existence-test prerequisite caps, count thresholds for confidence), run by Claude in an agent session configured for `claude-opus-5-5`. This checks that the written rules are consistent and give these numbers. It is not a model run: it does not show that any assistant following the instructions produces them. A logged run should reproduce every expected value.
 
@@ -75,7 +114,9 @@ R4 is a count rule, not a score: a Fast Baseline output passes the section 1 che
 
 ## Known defects
 
-None open in the scoring rules as at 18 October 2026 (KST). The first instruction line may differ from the GPT as last deployed by one token (the spaced trademark form; CHANGELOG v1.1.4); this is history, since the published block is the text of record.
+- **K1, section 2 bullet cap, open (found by run T5, 18 October 2026 (KST)).** reference.md section 9, section 2 of the packet: "Max **5 bullets** describing A–D, E0–E3, caps, confidence". The rule does not say whether nested bullets count, and the topics it lists (two caps, three confidence levels, the zero rule and rounding) invite nesting under five top-level bullets. In FMT-FB the model wrote 5 top-level bullets with 5 nested ones and the scorer counted 10. Not changed in v1.2.1: a change to the Reference Pack is a new text and needs its own run. The fix is one sentence stating whether nested bullets count.
+
+None other open in the scoring rules as at 18 October 2026 (KST). The first instruction line may differ from the GPT as last deployed by one token (the spaced trademark form; CHANGELOG v1.1.4); this is history, since the published block is the text of record.
 
 ---
 
