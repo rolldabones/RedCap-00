@@ -1,6 +1,6 @@
 # RedCap-00 tests
 
-**Tests · RedCap-00 v1.2.1 · 18 October 2026 (KST)**
+**Tests · RedCap-00 v1.2.2 · 19 October 2026 (KST)**
 
 The regression harness for the instrument in [instructions.md](instructions.md) and [reference.md](reference.md). Until v1.1.4 it was published as section 10 of the Reference file inside the README; it moved here in v1.2.0, with Test B corrected to agree with the prerequisite-cap rule (reference.md section 3.2) and one case added for each scoring defect fixed in v1.2.0.
 
@@ -43,7 +43,7 @@ LLM scoring is developer testing, not independent assurance. The session review 
 
 **Counts.** Scorer: 24 PASS, 2 FAIL, 0 UNSCORABLE, 0 truncated. Session review of the two FAILs: 1 concur, instrument defect (FMT-FB); 1 concur, model behavior (FMT-DP); no dissent; no case defect. Every expected score and confidence in sections 2 and 4 was reproduced (20 of 20).
 
-**Acceptance.** The rule in this file is that "A logged run should reproduce every expected value", and the README's Change control accepts a changed block only after one logged run. Every expected value was reproduced; the format check F2 failed in both modes. **Not accepted: open cases FMT-FB and FMT-DP. Reviewer: pending (Michael Paik).**
+**Acceptance.** The rule in this file is that "A logged run should reproduce every expected value", and the README's Change control accepts a changed block only after one logged run. Every expected value was reproduced; the format check F2 failed in both modes. **Not accepted: open cases FMT-FB and FMT-DP. Reviewer: Michael Paik, 19 October 2026 (KST), concurs.**
 
 Observation, Unknown: turn 1 of Test-B and of Test-E ended with stop_reason `refusal`, the reply cut off inside the packet, with nothing in the input that the instrument's safety rules name; the scripted turn 2 produced the full packet in both. The cause is Unknown.
 

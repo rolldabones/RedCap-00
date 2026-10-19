@@ -2,6 +2,13 @@
 
 All notable changes to this repository are documented here. Versioning follows [Semantic Versioning](https://semver.org/). The README, `CITATION.cff` and this file version in lockstep; prior versions are superseded, never silently overwritten.
 
+## v1.2.2 (2026-10-19, KST)
+
+Patch, from the weekly maintenance sweep of 19 October 2026 (KST) and Michael Paik's review of the T5 runs, completed 19 October 2026 (KST), on which he concurs with the scoring as recorded. No change to `instructions.md` or `reference.md`.
+
+- **Run T5 reviewed.** `tests.md` Acceptance records the reviewer. Not accepted, as before: FMT-FB and FMT-DP open.
+- README masthead, `tests.md` masthead, How to Cite and `CITATION.cff` to v1.2.2.
+
 ## v1.2.1 (2026-10-18, KST)
 
 Records-only patch: the ruling 9 logged run. Session T5 of the whole-account review of 15 October 2026 (doc section 5, RedCap-00 harness row; the T5 row of the session plan, ruling 9 runs added 18 October 2026). No wording of `instructions.md`, `reference.md` or `example.md` changes; the instruction block, the Reference Pack and the output footer stay at v1.2.0, the release at which they last changed.
