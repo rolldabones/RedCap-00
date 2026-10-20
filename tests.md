@@ -6,7 +6,7 @@ The regression harness for the instrument in [instructions.md](instructions.md) 
 
 ## Last run
 
-**Run T5, 18 October 2026 (KST).** The first logged run of the published instructions on a successor configuration, under ruling 9.
+**Run T5, 18 October 2026 (Korea Standard Time, KST).** The first logged run of the published instructions on a successor configuration, under ruling 9.
 
 - **Instruction text:** the fenced block of [instructions.md](instructions.md) (2,597 characters, SHA-256 `89184c0a0d8e7c0b6971ff1d07fe36d97512aba8eecfe9057521bf12a5dc9dd1`), followed by the whole of [reference.md](reference.md) (SHA-256 `460a23d66931c64a6170780e3d826f34a639705bf857dc1e938b2714a75cc86d`), as Run it in three steps says; repository HEAD `53b4a82` (v1.2.0).
 - **Model:** `claude-opus-5-5`, the string returned on every turn. **Scorer:** `claude-sonnet-5-5`, a different model, against each case's pass condition.
@@ -116,7 +116,7 @@ R4 is a count rule, not a score: a Fast Baseline output passes the section 1 che
 
 - **K1, section 2 bullet cap, open (found by run T5, 18 October 2026 (KST)).** reference.md section 9, section 2 of the packet: "Max **5 bullets** describing A–D, E0–E3, caps, confidence". The rule does not say whether nested bullets count, and the topics it lists (two caps, three confidence levels, the zero rule and rounding) invite nesting under five top-level bullets. In FMT-FB the model wrote 5 top-level bullets with 5 nested ones and the scorer counted 10. Not changed in v1.2.1: a change to the Reference Pack is a new text and needs its own run. The fix is one sentence stating whether nested bullets count.
 
-None other open in the scoring rules as at 18 October 2026 (KST). The first instruction line may differ from the GPT as last deployed by one token (the spaced trademark form; CHANGELOG v1.1.4); this is history, since the published block is the text of record.
+None other open in the scoring rules as of 18 October 2026 (KST). The first instruction line may differ from the GPT as last deployed by one token (the spaced trademark form; CHANGELOG v1.1.4); this is history, since the published block is the text of record.
 
 ---
 

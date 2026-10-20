@@ -4,7 +4,7 @@ Illustrative run, not a logged test run under ruling 9. Produced on 18 October 2
 
 **Example · RedCap-00 v1.2.0 · 18 October 2026 (KST)**
 
-One Fast Baseline run for a fictional manufacturer, with [instructions.md](instructions.md) and [reference.md](reference.md) as the operating instructions. In a live run the safety gate, intake, 20 questions and consistency checks arrive over several turns; here the user's replies are consolidated into one message and the assistant's reply is the Output Packet. The arithmetic behind the scorecard follows the packet. It was computed with Python on the device from the rules in reference.md sections 3, 4 and 8, not worked by hand.
+One Fast Baseline run for a fictional manufacturer, with [instructions.md](instructions.md) and [reference.md](reference.md) as the operating instructions. In a live run the safety gate, intake, 20 questions and consistency checks arrive over several turns; here the user's replies are consolidated into one message and the assistant's reply is the Output Packet. The arithmetic behind the scorecard follows the packet. It was computed with Python in the same agent session from the rules in reference.md sections 3, 4 and 8, not worked by hand.
 
 ## The user's input
 
@@ -142,7 +142,7 @@ No escalation triggers identified from provided information.
 
 ## Arithmetic behind the scorecard
 
-Computed with Python on the device from reference.md sections 3, 4 and 8, and not part of the assistant's output. Answers are listed Q1 to Q4 as answer/evidence.
+Computed with Python in the same agent session from reference.md sections 3, 4 and 8, and not part of the assistant's output. Answers are listed Q1 to Q4 as answer/evidence.
 
 | Move | Answers | Computation | E3 count, E2 or E3 count | Consistency check | Score | Confidence |
 |---|---|---|---|---|---|---|

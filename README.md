@@ -27,7 +27,7 @@ Answer using high-level summaries. For each question, pick A–D and an evidence
   - **E0** (0) no evidence
   - **E1** (1) verbal only
   - **E2** (2) documented artifact with an owner role
-  - **E3** (3) tested in the last 12 months with logs and follow-up actions (CAPA)
+  - **E3** (3) tested in the last 12 months with logs and follow-up actions (corrective and preventive action, CAPA)
 
 The tool scores conservatively. A move is capped at 2 when its average evidence is below E2 or when its prerequisite question is answered A. It also shows confidence and an evidence index so uncertainty is explicit. A score of 0 means “Unknown/Insufficient data” and is given only when more than half of a move’s answers are A with no evidence (E0).
 
@@ -53,14 +53,14 @@ This is not legal advice, not a compliance determination and not sanctions scree
 
 ## Change control
 
-The configuration is Locked as of 1 October 2026. Changes are made in `instructions.md` and `reference.md` under this repository's version rule (Semantic Versioning; the README, `CITATION.cff` and `CHANGELOG.md` move in lockstep). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in `tests.md`. The block fixes seven scoring defects (R1 to R7, listed in `tests.md` with their old wording and a case proving each fix). Its first logged run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, reproduced every expected score and confidence and failed the section 2 bullet cap in both modes (known defect K1); it is not accepted, pending review (`tests.md`, Last run).
+The configuration is Locked as of 1 October 2026. Changes are made in `instructions.md` and `reference.md` under this repository's version rule (Semantic Versioning; the README, `CITATION.cff` and `CHANGELOG.md` move in lockstep). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in `tests.md`. Each file's own header carries the release at which that file last changed, not the current release, which only the README masthead carries; the instruction block, the Reference Pack and the output footer keep the release at which the block last changed, until a later release changes it (CHANGELOG, Version string). The block fixes seven scoring defects (R1 to R7, listed in `tests.md` with their old wording and a case proving each fix). Its first logged run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, reproduced every expected score and confidence and failed the section 2 bullet cap in both modes: in Fast Baseline (case FMT-FB) through known defect K1, and in Deepening (case FMT-DP) by model behavior, over the cap on either reading of K1. Michael Paik reviewed the run on 19 October 2026 (KST) and concurs; it is not accepted, on open cases FMT-FB and FMT-DP (`tests.md`, Last run).
 
 ## Part of the ecosystem
 
 This tool is one component of a larger body of AI governance, risk management and compliance work. The canonical map of all repositories is [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md) in the profile repository.
 
 Nearest neighbors:
-- [RedCap-01](https://github.com/rolldabones/RedCap-01): the companion diagnostic one level upstream, testing whether ERM improves the decisions that determine objective achievement
+- [RedCap-01](https://github.com/rolldabones/RedCap-01): the companion diagnostic one level upstream, testing whether enterprise risk management (ERM) improves the decisions that determine objective achievement
 - [GRCnext-Copilot](https://github.com/rolldabones/GRCnext-Copilot): the full optionality assessor; RedCap-00 is the free text-only self-check of the same question, whether Pipes, Switches and Exits would execute within tolerance
 - [risk-informed-decision-making-prompt](https://github.com/rolldabones/risk-informed-decision-making-prompt): structures the decisions a failed move or a 72-hour breakpoint forces
 - [grc](https://github.com/rolldabones/grc): the governance, risk management and compliance method the five moves and their evidence report into

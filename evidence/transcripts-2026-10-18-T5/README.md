@@ -2,11 +2,11 @@
 
 **Evidence · run T5 · 18 October 2026 (KST)**
 
-What: the transcripts of run T5 of the `redcap-00` suite, one file per case, each with the case's rule, pass condition, the full conversation and the scorer's verdict and reasoning, and [summary.json](summary.json), the runner's summary (repository HEAD `53b4a82`, system-file digests, models, max_tokens, finish time).
+What: the transcripts of run T5 of the `redcap-00` suite, one file per case, each with the case's rule, pass condition, the full conversation and the scorer's verdict and reasoning (S4 carries the verdict only, with no reasoning), and [summary.json](summary.json), the runner's summary (repository HEAD `53b4a82`, system-file digests, models, max_tokens, finish time).
 
 When: finished 2026-10-18T10:44+09:00 (Seoul).
 
-Models: tested `claude-opus-5-5`; scored by `claude-sonnet-5-5`, a different model. LLM scoring is developer testing, not independent assurance. Harness: API system prompt, no tools, max_tokens 16000, one fresh session per case. System text (the fenced block of instructions.md extracted byte for byte, then any knowledge file named): `RedCap-00-instructions.txt` SHA-256 `89184c0a0d8e7c0b6971ff1d07fe36d97512aba8eecfe9057521bf12a5dc9dd1`; `reference.md` SHA-256 `460a23d66931c64a6170780e3d826f34a639705bf857dc1e938b2714a75cc86d`.
+Models: tested `claude-opus-5-5`; scored by `claude-sonnet-5-5`, a different model. LLM scoring is developer testing, not independent assurance. Harness: API system prompt, no tools, max_tokens 16000, one fresh session per case. System text (the fenced block of instructions.md extracted byte for byte, then any knowledge file named): `RedCap-00-instructions.txt` SHA-256 `89184c0a0d8e7c0b6971ff1d07fe36d97512aba8eecfe9057521bf12a5dc9dd1`; `reference.md` SHA-256 `460a23d66931c64a6170780e3d826f34a639705bf857dc1e938b2714a75cc86d`. In `summary.json` the instructions file is keyed by the maintainer's local working path (`../Claude outputs/T5-runs/suites/blocks/RedCap-00-instructions.txt`); the published equivalent is the fenced block of [instructions.md](../../instructions.md).
 
 How produced: the session T5 runner (`t5_run.py`, a session tool, not shipped in this repository) run by Michael Paik in his Terminal; the suite manifest was written in session T5 from this repository's test cases. Each transcript here is the runner's output copied byte for byte; the only change is the closing line appended at the end of each file. `summary.json` is copied unchanged. Model output is verbatim and is not edited for house style. The session review of each verdict and the acceptance result are in [tests.md](../../tests.md).
 
