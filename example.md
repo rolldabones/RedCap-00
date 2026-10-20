@@ -1,8 +1,8 @@
 # RedCap-00 example
 
-Illustrative run, not a logged test run under ruling 9. Produced on 18 October 2026 (KST) by Claude, in an agent session configured for `claude-opus-5-5`, following `instructions.md` as its operating instructions (not a bare system-prompt API call). Inputs are fictional.
+Illustrative run, not a logged test run of the kind the README's Change control requires. Produced on 18 October 2026 (KST) by Claude, in an agent session configured for `claude-opus-5-5`, following `instructions.md` as its operating instructions (not a bare system-prompt API call). Inputs are fictional.
 
-**Example · RedCap-00 v1.2.0 · 18 October 2026 (KST)**
+**Example · RedCap-00 v1.2.4 · 20 October 2026 (KST)**
 
 One Fast Baseline run for a fictional manufacturer, with [instructions.md](instructions.md) and [reference.md](reference.md) as the operating instructions. In a live run the safety gate, intake, 20 questions and consistency checks arrive over several turns; here the user's replies are consolidated into one message and the assistant's reply is the Output Packet. The arithmetic behind the scorecard follows the packet. It was computed with Python in the same agent session from the rules in reference.md sections 3, 4 and 8, not worked by hand.
 

@@ -1,10 +1,12 @@
 # RedCap-00 instructions
 
-**Instrument · RedCap-00 v1.2.0 · 18 October 2026 (KST) · text of record**
+**Instrument · RedCap-00 v1.2.4 · 20 October 2026 (KST) · text of record, not accepted pending a logged run**
 
-This is the RedCap-00 instruction block as last mirrored from the RedCap-00 custom GPT on 15 July 2026 (no verification date recorded), before the conversion, with the changes listed in [CHANGELOG.md](CHANGELOG.md) v1.2.0. Whether its first line matched the GPT at the trademark token is Unknown (CHANGELOG v1.1.4).
+This is the RedCap-00 instruction block as last mirrored from the RedCap-00 custom GPT on 15 July 2026 (no verification date recorded), before the conversion, with the changes listed in [CHANGELOG.md](CHANGELOG.md) v1.2.0 and v1.2.4. Whether its first line matched the GPT at the trademark token is Unknown (CHANGELOG v1.1.4).
 
 **How to use.** Paste everything inside the fenced block below into the system prompt, custom instructions or project instructions of any current assistant, and supply the whole of [reference.md](reference.md) with it, pasted after the block or attached as a project file. The block names the Reference Pack and stops if it is missing. It assumes no plug-ins, actions, web search or code tools. Before you rely on a changed block, run it once and record the run in [tests.md](tests.md).
+
+**Acceptance.** This block changed in v1.2.4: the JURISDICTION rule now reads "Never declare anything legal or compliant." in place of a ban on the words themselves, which the MISSION line, the question bank and the example could not follow. The only logged run, T5, ran the v1.2.0 block. The block is not accepted pending a logged run ([tests.md](tests.md), Last run).
 
 ```text
 You are RedCap-00 Optionality Self-Check by GRCnext™.
@@ -20,7 +22,7 @@ If user pastes sensitive info: instruct removal, request redacted 3-bullet summa
 
 #### JURISDICTION
 
-If not provided: “Jurisdiction: Unknown.” Never say “legal” or “compliant.” Provide planning options and questions for counsel.
+If not provided: “Jurisdiction: Unknown.” Never declare anything legal or compliant. Provide planning options and questions for counsel.
 
 #### REFUSE
 

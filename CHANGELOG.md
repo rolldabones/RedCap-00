@@ -2,6 +2,34 @@
 
 All notable changes to this repository are documented here. Versioning follows [Semantic Versioning](https://semver.org/). The README, `CITATION.cff` and this file version in lockstep; prior versions are superseded, never silently overwritten.
 
+## v1.2.4 (2026-10-20, KST)
+
+Patch. Independent review of 20 October 2026; changes made with Claude, approved by Michael Paik. `reference.md` is unchanged, so its run T5 digest still holds; the instruction block changed and is not accepted pending a logged run.
+
+### Instrument
+- **JURISDICTION rule (RC0-02).** `instructions.md`: "Never say “legal” or “compliant.”" is replaced by "Never declare anything legal or compliant.", which the MISSION line, the question bank and the example can follow. Block header to v1.2.4 with an Acceptance note: not accepted pending a logged run. `tests.md` records that the T5 digests describe the v1.2.0 block and gives the current block's digest.
+
+### Accuracy and disclosure
+- **README Change control (RC0-01, RC0-06).** The T5 run is recorded as reviewed by Michael Paik on 19 October 2026 (KST), not accepted on open cases FMT-FB and FMT-DP; only FMT-FB is attributed to K1, and FMT-DP is model behavior, over the cap on either reading.
+- **Acceptance caution (RC0-03).** Run it in three steps now says that the current block is not accepted under this repository's change control.
+- **K1 both counts (RC0-04).** `tests.md` reports the section 2 bullet count of every final T5 packet both ways; K1 stays open.
+- **Confidence Low explained (RC0-08).** The README says Low means untested evidence, not weak evidence, with the all-C/E2 case.
+- **Incomplete first turns (RC0-09).** `tests.md` records the two first turns that ended with stop_reason `refusal` as incomplete; the README run steps say what to do when a reply stops before the packet.
+- **Known defects disclosed, not changed (RC0-07, RC0-10, RC0-12, RC0-14).** `tests.md` K2 (the monotonic confidence claim holds only while the consistency check passes), K3 (a serial comma and unexpanded acronyms in `reference.md`) and K4 (the example packet departs from the section 7 schema and does not offer Deepening). The Reference Pack is the text of run T5, and the example's packet and input are a produced output and a run input, so they are left as they are.
+- **Erratum to v1.2.0 (RC0-07).** That entry says "strengthening any answer can no longer lower confidence". This holds only while the move's consistency check passes (`tests.md` K2). The shipped entry stays as cut.
+- **Evidence index (RC0-16, RC0-19).** S4 carries a verdict with no reasoning; `summary.json` keys the instructions file by the maintainer's local path. The T5 runner is not shipped, so the run cannot be reproduced from this repository alone.
+- **Citation (RC0-17).** The README says `CITATION.cff` names no publisher because the Citation File Format has no top-level publisher field.
+
+### Readability
+- **Internal references (RC0-11).** "ruling 9", "report 11, Test 4" and "session T5" in `tests.md`, `example.md` and the evidence index are replaced with plain statements. Shipped CHANGELOG entries stay as cut.
+- **House style (RC0-12, RC0-13, RC0-18).** CAPA (corrective and preventive action), ERM (enterprise risk management) and KST (Korea Standard Time) spelled out at first use in the README and `tests.md`; "as at" to "as of"; "on the device" to "in the same agent session" in `example.md`.
+- **Version convention (RC0-15).** README Change control explains that each file header carries the release at which that file last changed.
+
+### Versions
+- README masthead, How to Cite, `CITATION.cff` and this file to v1.2.4. `instructions.md`, `tests.md` and `example.md` headers to v1.2.4, the release at which they last changed. `reference.md` and the output footer stay at v1.2.0.
+
+Not changed: the retirement line (RC0-05; kept as recorded). SPDX tag in `LICENSE.md` (correct syntax).
+
 ## v1.2.3 (2026-10-20, KST)
 
 - LICENSE: two defects against the Creative Commons legal code corrected (the space in 'ShareAlike. In'; the CC0 sentence of the closing notice). Operative terms unchanged.

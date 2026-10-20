@@ -1,6 +1,6 @@
 # RedCap-00
 
-**Version 1.2.3 · 20 October 2026 · Instrument, formerly the RedCap-00 custom GPT (retired 1 October 2026) · Instructions last mirrored from the GPT on 15 July 2026 (no verification date recorded), before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
+**Version 1.2.4 · 20 October 2026 · Instrument, formerly the RedCap-00 custom GPT (retired 1 October 2026) · Instructions last mirrored from the GPT on 15 July 2026 (no verification date recorded), before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
 
 > **Retired 1 October 2026 (KST).** The RedCap-00 custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -13,6 +13,10 @@ RedCap-00 is the first tool in **GRCnext™**: a self-check, published as text w
 1. Paste the fenced block in [instructions.md](instructions.md), followed by the whole of [reference.md](reference.md), into the system prompt, custom instructions or project instructions of any current assistant. In a project, `reference.md` can be attached as a project file instead.
 2. Give it the inputs it asks for (a safety confirmation, a short intake, 20 Fast Baseline answers and the consistency checks), or start from the fictional inputs in [example.md](example.md).
 3. Review the output yourself and check it against [tests.md](tests.md). You own sign-off.
+
+If a reply stops before the Output Packet is complete, ask the assistant to proceed and produce the packet. The logged run needed this second turn in 2 of 26 cases ([tests.md](tests.md), Last run).
+
+Caution: the current block is not accepted under this repository's change control. Its only logged run left two format cases open, and the block has changed since that run (see Change control below).
 
 ## How to use it well
 
@@ -29,7 +33,7 @@ Answer using high-level summaries. For each question, pick A–D and an evidence
   - **E2** (2) documented artifact with an owner role
   - **E3** (3) tested in the last 12 months with logs and follow-up actions (corrective and preventive action, CAPA)
 
-The tool scores conservatively. A move is capped at 2 when its average evidence is below E2 or when its prerequisite question is answered A. It also shows confidence and an evidence index so uncertainty is explicit. A score of 0 means “Unknown/Insufficient data” and is given only when more than half of a move’s answers are A with no evidence (E0).
+The tool scores conservatively. A move is capped at 2 when its average evidence is below E2 or when its prerequisite question is answered A. It also shows confidence and an evidence index so uncertainty is explicit. A score of 0 means “Unknown/Insufficient data” and is given only when more than half of a move’s answers are A with no evidence (E0). Confidence Low means the evidence is untested, not that it is weak: a move answered C at E2 throughout (documented and owned everywhere) still gets Low, because Medium needs at least one answer at E3.
 
 ## What not to paste
 
@@ -53,7 +57,7 @@ This is not legal advice, not a compliance determination and not sanctions scree
 
 ## Change control
 
-The configuration is Locked as of 1 October 2026. Changes are made in `instructions.md` and `reference.md` under this repository's version rule (Semantic Versioning; the README, `CITATION.cff` and `CHANGELOG.md` move in lockstep). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in `tests.md`. Each file's own header carries the release at which that file last changed, not the current release, which only the README masthead carries; the instruction block, the Reference Pack and the output footer keep the release at which the block last changed, until a later release changes it (CHANGELOG, Version string). The block fixes seven scoring defects (R1 to R7, listed in `tests.md` with their old wording and a case proving each fix). Its first logged run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, reproduced every expected score and confidence and failed the section 2 bullet cap in both modes: in Fast Baseline (case FMT-FB) through known defect K1, and in Deepening (case FMT-DP) by model behavior, over the cap on either reading of K1. Michael Paik reviewed the run on 19 October 2026 (KST) and concurs; it is not accepted, on open cases FMT-FB and FMT-DP (`tests.md`, Last run).
+The configuration is Locked as of 1 October 2026. Changes are made in `instructions.md` and `reference.md` under this repository's version rule (Semantic Versioning; the README, `CITATION.cff` and `CHANGELOG.md` move in lockstep). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in `tests.md`. Each file's own header carries the release at which that file last changed, not the current release, which only the README masthead carries; the instruction block and the Reference Pack each carry the release at which they last changed, and the output footer is set in the Reference Pack (CHANGELOG, Version string). The block fixes seven scoring defects (R1 to R7, listed in `tests.md` with their old wording and a case proving each fix). Its first logged run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, reproduced every expected score and confidence and failed the section 2 bullet cap in both modes: in Fast Baseline (case FMT-FB) through known defect K1, and in Deepening (case FMT-DP) by model behavior, over the cap on either reading of K1. Michael Paik reviewed the run on 19 October 2026 (KST) and concurs; it is not accepted, on open cases FMT-FB and FMT-DP (`tests.md`, Last run). The block has since changed (the JURISDICTION rule, in the release of 20 October 2026) and is not accepted pending a logged run.
 
 ## Part of the ecosystem
 
@@ -67,9 +71,9 @@ Nearest neighbors:
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-00*, v1.2.3. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
+> Paik, Son-U Michael. *RedCap-00*, v1.2.4. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
 
-A machine-readable citation is in [CITATION.cff](CITATION.cff).
+A machine-readable citation of the same work is in [CITATION.cff](CITATION.cff). It names no publisher, because the Citation File Format has no top-level publisher field.
 
 ## License
 
