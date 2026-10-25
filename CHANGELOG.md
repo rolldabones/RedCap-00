@@ -2,6 +2,10 @@
 
 All notable changes to this repository are documented here. Versioning follows [Semantic Versioning](https://semver.org/). The README, `CITATION.cff` and this file version in lockstep; prior versions are superseded, never silently overwritten.
 
+## v1.2.5 (2026-10-26, KST)
+
+Patch release. Acceptance restated as a tolerance: the tests file is now read under the account rule, [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), names its critical cases and records the instrument's status under that rule (block v1.2.4 not accepted, no run; last accepted block v1.2.0 with residuals); the README carries the same status below its masthead. No rule in the instrument changed and no run was made; the edits are to the test record and the front door. Train A of the whole-account review of 24 October 2026 (KST); prepared with Claude, approved by Michael Paik.
+
 ## v1.2.4 (2026-10-20, KST)
 
 Patch. Independent review of 20 October 2026; changes made with Claude, approved by Michael Paik. `reference.md` is unchanged, so its run T5 digest still holds; the instruction block changed and is not accepted pending a logged run.

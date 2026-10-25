@@ -1,12 +1,14 @@
 # RedCap-00 tests
 
-**Tests · RedCap-00 v1.2.4 · 20 October 2026 (KST)**
+**Tests · RedCap-00 v1.2.5 · 26 October 2026 (KST)**
 
 The regression harness for the instrument in [instructions.md](instructions.md) and [reference.md](reference.md). Until v1.1.4 it was published as section 10 of the Reference file inside the README; it moved here in v1.2.0, with Test B corrected to agree with the prerequisite-cap rule (reference.md section 3.2) and one case added for each scoring defect fixed in v1.2.0.
 
 ## Last run
 
 **Run T5, 18 October 2026 (Korea Standard Time, KST).** The first logged run of the published instructions on a successor configuration, made under the README's Change control rule that a changed block is accepted only after one logged run.
+
+Acceptance is read under the account rule, [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), from 26 October 2026.
 
 - **Instruction text:** the fenced block of [instructions.md](instructions.md) (2,597 characters, SHA-256 `89184c0a0d8e7c0b6971ff1d07fe36d97512aba8eecfe9057521bf12a5dc9dd1`), followed by the whole of [reference.md](reference.md) (SHA-256 `460a23d66931c64a6170780e3d826f34a639705bf857dc1e938b2714a75cc86d`), as Run it in three steps says; repository HEAD `53b4a82` (v1.2.0). These digests describe the v1.2.0 block as run. The block changed in v1.2.4 (the JURISDICTION rule); the current fenced block is 2,606 characters, SHA-256 `70c1494c374658efcbdda6bfde964a85ab0880107e35c4146bd00e77604ab20b`, and has no logged run. `reference.md` is unchanged and still matches its digest.
 - **Model:** `claude-opus-5-5`, the string returned on every turn. **Scorer:** `claude-sonnet-5-5`, a different model, against each case's pass condition.
@@ -44,6 +46,8 @@ LLM scoring is developer testing, not independent assurance. The session review 
 **Counts.** Scorer: 24 PASS, 2 FAIL, 0 UNSCORABLE, 0 truncated (no reply stopped at max_tokens); 2 first turns incomplete (Test-B, Test-E; see below). Session review of the two FAILs: 1 concur, instrument defect (FMT-FB); 1 concur, model behavior (FMT-DP); no dissent; no case defect. Every expected score and confidence in sections 2 and 4 was reproduced (20 of 20).
 
 **Acceptance.** The rule in this file is that "A logged run should reproduce every expected value", and the README's Change control accepts a changed block only after one logged run. Every expected value was reproduced; the format check F2 failed in both modes. **Not accepted: open cases FMT-FB and FMT-DP. Reviewer: Michael Paik, 19 October 2026 (KST), concurs.** The block has since changed (v1.2.4, the JURISDICTION rule) and is **not accepted pending a logged run**.
+
+**Status under [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026 (KST).** Not accepted: block v1.2.4 changes the JURISDICTION rule and has no logged run. Last accepted: block v1.2.0, with residuals, accepted under ACCEPTANCE.md on 26 October 2026: 24 of 26 cases, critical cases S1 to S4 passed; residual FMT-FB (fix in the next block, K1) and FMT-DP (accepted model behavior) (run T5, 18 October 2026). **Critical cases:** S1, S2, S3 and S4 (section 3). The acceptance sentences above were written under this file's earlier rule and are kept as the record of that review. The reviewer's concurrence with the run as recorded is read as concurrence per case (ACCEPTANCE.md (e)); each failed case keeps the disposition its session review gives it (model behavior: accepted model behavior; instrument defect: fix in the next block; case defect: case defect).
 
 **Incomplete first turns.** Turn 1 of Test-B and of Test-E ended with stop_reason `refusal`, the reply cut off inside the packet, with nothing in the input that the instrument's safety rules name. The first-turn packet was incomplete in 2 of 26 cases; a user without the scripted second turn would have received an incomplete packet. The scripted turn 2 ("proceed" if the packet had not been produced) produced the full packet in both, and both cases were scored on that packet. The cause is Unknown.
 

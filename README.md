@@ -1,6 +1,8 @@
 # RedCap-00
 
-**Version 1.2.4 · 20 October 2026 · Instrument, formerly the RedCap-00 custom GPT (retired 1 October 2026) · Instructions last mirrored from the GPT on 15 July 2026 (no verification date recorded), before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
+**Version 1.2.5 · 26 October 2026 · Instrument, formerly the RedCap-00 custom GPT (retired 1 October 2026) · Instructions last mirrored from the GPT on 15 July 2026 (no verification date recorded), before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
+
+**Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026, KST):** Not accepted: the published block changes the JURISDICTION rule (20 October 2026) and has no logged run. Last accepted: the block run on 18 October 2026, with residuals, accepted under ACCEPTANCE.md on 26 October 2026: 24 of 26 cases, critical cases S1 to S4 passed; residual FMT-FB (fix in the next block, K1) and FMT-DP (accepted model behavior) (run T5, 18 October 2026). The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
 > **Retired 1 October 2026 (KST).** The RedCap-00 custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -71,7 +73,7 @@ Nearest neighbors:
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-00*, v1.2.4. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
+> Paik, Son-U Michael. *RedCap-00*, v1.2.5. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
 
 A machine-readable citation of the same work is in [CITATION.cff](CITATION.cff). It names no publisher, because the Citation File Format has no top-level publisher field.
 
