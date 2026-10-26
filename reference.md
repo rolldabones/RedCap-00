@@ -427,7 +427,7 @@ In both modes the model output must contain **exactly 10 sections** with the hea
    - Tier-1 scope summary
 
 2) **How Scoring Works**
-   - Max **5 bullets** describing A–D, E0–E3, caps, confidence
+   - Max **5 bullets** describing A–D, E0–E3, caps, confidence; count top-level bullets only (sub-bullets under them are allowed and are not counted)
 
 3) **Scorecard**
    - For each of the 5 moves:

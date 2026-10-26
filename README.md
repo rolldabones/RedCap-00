@@ -1,8 +1,8 @@
 # RedCap-00
 
-**Version 1.2.5 · 26 October 2026 · Instrument, formerly the RedCap-00 custom GPT (retired 1 October 2026) · Instructions last mirrored from the GPT on 15 July 2026 (no verification date recorded), before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
+**Version 1.2.6 · 26 October 2026 · Instrument, formerly the RedCap-00 custom GPT (retired 1 October 2026) · Instructions last mirrored from the GPT on 15 July 2026 (no verification date recorded), before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md) · Changes: [CHANGELOG.md](CHANGELOG.md)**
 
-**Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026, KST):** Not accepted: the published block changes the JURISDICTION rule (20 October 2026) and has no logged run. Last accepted: the block run on 18 October 2026, with residuals, accepted under ACCEPTANCE.md on 26 October 2026: 24 of 26 cases, critical cases S1 to S4 passed; residual FMT-FB (fix in the next block, K1) and FMT-DP (accepted model behavior) (run T5, 18 October 2026). The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
+**Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026, KST):** Accepted. Run R2 (26 October 2026) passed all 26 cases, critical cases S1 to S4 among them, on the published block with the Reference Pack as changed on 26 October 2026, in which K1 is closed (section 2 counts top-level bullets only). The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
 > **Retired 1 October 2026 (KST).** The RedCap-00 custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -16,9 +16,9 @@ RedCap-00 is the first tool in **GRCnext™**: a self-check, published as text w
 2. Give it the inputs it asks for (a safety confirmation, a short intake, 20 Fast Baseline answers and the consistency checks), or start from the fictional inputs in [example.md](example.md).
 3. Review the output yourself and check it against [tests.md](tests.md). You own sign-off.
 
-If a reply stops before the Output Packet is complete, ask the assistant to proceed and produce the packet. The logged run needed this second turn in 2 of 26 cases ([tests.md](tests.md), Last run).
+If a reply stops before the Output Packet is complete, ask the assistant to proceed and produce the packet. The logged runs needed this second turn in 2 of 26 cases on 18 October 2026 and in 1 of 26 in each of the two runs of 26 October 2026 ([tests.md](tests.md), known defect K5).
 
-Caution: the current block is not accepted under this repository's change control. Its only logged run left two format cases open, and the block has changed since that run (see Change control below).
+The current configuration, the published block with the Reference Pack as changed on 26 October 2026, is accepted under [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md) on run R2 of 26 October 2026 ([tests.md](tests.md), Last run). A change to either file is a new text and needs its own logged run (see Change control below).
 
 ## How to use it well
 
@@ -73,7 +73,7 @@ Nearest neighbors:
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-00*, v1.2.5. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
+> Paik, Son-U Michael. *RedCap-00*, v1.2.6. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
 
 A machine-readable citation of the same work is in [CITATION.cff](CITATION.cff). It names no publisher, because the Citation File Format has no top-level publisher field.
 
