@@ -2,6 +2,12 @@
 
 All notable changes to this repository are documented here. Versioning follows [Semantic Versioning](https://semver.org/). The README, `CITATION.cff` and this file version in lockstep; prior versions are superseded, never silently overwritten.
 
+## v1.2.7 (2026-11-03, KST)
+
+- README masthead to 40 words from 43: the Changes link leaves it (the CHANGELOG is linked from the Files table).
+- `tests.md` section 4: "Found in the whole-account review of 15 October 2026, in its check of" reads "Found on 15 October 2026 in a check of"; no case, expected value or run record changed; acceptance unchanged.
+- README, `tests.md` and `CITATION.cff` to v1.2.7. Train C of the improvement rotation (review of 24 October 2026). Prepared with Claude, approved by Michael Paik.
+
 ## v1.2.6 (2026-10-26, KST)
 
 Patch release with one rule change in the Reference Pack. **K1 closed:** `reference.md` section 9, section 2 of the packet, now reads "Max **5 bullets** describing A–D, E0–E3, caps, confidence; count top-level bullets only (sub-bullets under them are allowed and are not counted)", and the `tests.md` format check reads the same. The rule did not say whether nested bullets count, so the same output was scored FAIL on 18 October 2026 and PASS on 26 October 2026; the top-level reading is the one under which 22 of the 23 T5 packets complied. Two logged runs the same day, block v1.2.4 on `claude-opus-5-5`, scored by `claude-sonnet-5-5`: R1 with the v1.2.5 Reference Pack, 24 of 26 after review (the two format cases dissented to FAIL on K1), and R2 with the changed Reference Pack, 26 of 26: **accepted** under `ACCEPTANCE.md` in the `rolldabones` repository, reviewer Michael Paik concurring per case. **K5 recorded:** an incomplete first turn (stop_reason `refusal`) in 4 of 78 cases over three runs, cause Unknown. `tests.md` (Last run, status, K1, K5), the README status and caution lines and the `instructions.md` status lines updated; transcripts in `evidence/transcripts-2026-10-26-R1/` and `-R2/`. The instruction block is unchanged. Prepared with Claude, approved by Michael Paik.

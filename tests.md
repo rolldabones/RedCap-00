@@ -1,6 +1,6 @@
 # RedCap-00 tests
 
-**Tests · RedCap-00 v1.2.6 · 26 October 2026 (KST)**
+**Tests · RedCap-00 v1.2.7 · 3 November 2026 (KST)**
 
 The regression harness for the instrument in [instructions.md](instructions.md) and [reference.md](reference.md). Until v1.1.4 it was published as section 10 of the Reference file inside the README; it moved here in v1.2.0, with Test B corrected to agree with the prerequisite-cap rule (reference.md section 3.2) and one case added for each scoring defect fixed in v1.2.0.
 
@@ -68,7 +68,7 @@ LLM scoring is developer testing, not independent assurance. The session review 
 
 **Acceptance.** The rule in this file is that "A logged run should reproduce every expected value", and the README's Change control accepts a changed block only after one logged run. Every expected value was reproduced; the format check F2 failed in both modes. **Not accepted: open cases FMT-FB and FMT-DP. Reviewer: Michael Paik, 19 October 2026 (KST), concurs.** The block has since changed (v1.2.4, the JURISDICTION rule) and is **not accepted pending a logged run**.
 
-**Status under [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026 (KST).** Accepted. Run R2 (26 October 2026) passed all 26 cases, critical cases S1 to S4 among them, on block v1.2.4 with the reference.md of v1.2.6, in which K1 is closed (section 2 counts top-level bullets only). **Critical cases:** S1, S2, S3 and S4 (section 3). The earlier status of this line, not accepted pending a logged run of block v1.2.4, was replaced the same day by runs R1 and R2 (Last run, above).
+**Status under [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026 (KST), unchanged at v1.2.7 (3 November 2026).** Accepted. Run R2 (26 October 2026) passed all 26 cases, critical cases S1 to S4 among them, on block v1.2.4 with the reference.md of v1.2.6, in which K1 is closed (section 2 counts top-level bullets only). **Critical cases:** S1, S2, S3 and S4 (section 3). The earlier status of this line, not accepted pending a logged run of block v1.2.4, was replaced the same day by runs R1 and R2 (Last run, above).
 
 **Incomplete first turns.** Turn 1 of Test-B and of Test-E ended with stop_reason `refusal`, the reply cut off inside the packet, with nothing in the input that the instrument's safety rules name. The first-turn packet was incomplete in 2 of 26 cases; a user without the scripted second turn would have received an incomplete packet. The scripted turn 2 ("proceed" if the packet had not been produced) produced the full packet in both, and both cases were scored on that packet. The cause is Unknown.
 
@@ -107,7 +107,7 @@ Test B as published until v1.1.4 read: “Move 2 indicates no alternate bank/rai
 
 ## 4. Fixed defects (v1.2.0) and the cases that prove each fix
 
-Found in the whole-account review of 15 October 2026, in its check of this instrument's scoring rules (R1 to R4 first logged on 5 October 2026). Each is fixed in v1.2.0 and itemized old → new in [CHANGELOG.md](CHANGELOG.md). What the self-check measures (five critical moves within 72 hours) is unchanged.
+Found on 15 October 2026 in a check of this instrument's scoring rules (R1 to R4 first logged on 5 October 2026). Each is fixed in v1.2.0 and itemized old → new in [CHANGELOG.md](CHANGELOG.md). What the self-check measures (five critical moves within 72 hours) is unchanged.
 
 - **R1, rounding undefined.** Old: “Scoring Method (deterministic)” over “Compute the **rounded average** across that move’s answered questions.” Half values (Fast Baseline only) had no rule. Fixed: an exact half rounds down.
 - **R2, Test B against the cap.** Old Test B: “(A or B on Q1, E0/E1) ... capped at **2**” against the cap “no alternate bank or rail identified” and Q1 B “identified only”. Fixed: the cap fires on A; Test B uses A.
