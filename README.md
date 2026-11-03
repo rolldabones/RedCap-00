@@ -1,6 +1,6 @@
 # RedCap-00
 
-**Version 1.2.7 · 3 November 2026 · Instrument, formerly the RedCap-00 custom GPT (retired 1 October 2026) · Instructions last mirrored from the GPT on 15 July 2026 (no verification date recorded), before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.3.0 · 4 November 2026 · Instrument, formerly the RedCap-00 custom GPT (retired 1 October 2026) · Instructions last mirrored from the GPT on 15 July 2026 (no verification date recorded), before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
 **Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026, KST):** Accepted. Run R2 (26 October 2026) passed all 26 cases, critical cases S1 to S4 among them, on the published block with the Reference Pack as changed on 26 October 2026, in which K1 is closed (section 2 counts top-level bullets only). The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
@@ -55,6 +55,7 @@ This is not legal advice, not a compliance determination and not sanctions scree
 - [reference.md](reference.md): the Reference Pack (question bank, scoring, confidence, tabletop, output schema)
 - [example.md](example.md): one illustrative Fast Baseline run on a fictional organization, with the scorecard arithmetic
 - [tests.md](tests.md): the regression harness, the scoring defects fixed in v1.2.0 and the run record
+- [provider-exit-drill.md](provider-exit-drill.md): companion note, the provider exit drill at the scale of one professional's AI tooling (custody register, project note, 30-minute exit test, standing drill), scored by hand on this README's scales; it does not change the instrument
 - [evidence/transcripts-2026-10-18-T5/](evidence/transcripts-2026-10-18-T5/README.md): the transcripts of run T5, copied byte for byte
 
 ## Change control
@@ -73,7 +74,7 @@ Nearest neighbors:
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-00*, v1.2.7. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
+> Paik, Son-U Michael. *RedCap-00*, v1.3.0. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
 
 A machine-readable citation of the same work is in [CITATION.cff](CITATION.cff). It names no publisher, because the Citation File Format has no top-level publisher field.
 

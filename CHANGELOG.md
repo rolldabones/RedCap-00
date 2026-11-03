@@ -2,6 +2,10 @@
 
 All notable changes to this repository are documented here. Versioning follows [Semantic Versioning](https://semver.org/). The README, `CITATION.cff` and this file version in lockstep; prior versions are superseded, never silently overwritten.
 
+## v1.3.0 (2026-11-04, KST)
+
+Minor release: one companion note, no change to the instrument. `provider-exit-drill.md` takes the substitution and clean-exit questions down to the scale of one professional's AI tooling: custody, not price, as the lock-in that matters; a custody register of what the work depends on and where the copy outside every provider lives; a project note per live matter, in plain text outside every provider, whose first four fields are the four elements of Informed Intent; a 30-minute exit test on one live matter with a cold model from another provider, recorded with its custody leak; a standing drill, quarterly and on four triggers; and scoring by hand on the README's A to D and E0 to E3 scales. The instruction block, the Reference Pack, `tests.md` and the acceptance status are unchanged, and the note's result does not enter an Output Packet. Occasioned by Nate B. Jones's post and video of 2 September 2026 (UTC), credited by the public post page and the public video; his five-prompt audit is members-only and is neither cited nor linked, and nothing from the paid text is reproduced. Under express reopening of the no-further-additions rule, on Michael Paik's ruling of 4 November 2026. README (masthead, Files, How to Cite), `CITATION.cff` (version, date, abstract) and this file to v1.3.0 in lockstep. Prepared with Claude, approved by Michael Paik.
+
 ## v1.2.7 (2026-11-03, KST)
 
 - README masthead to 40 words from 43: the Changes link leaves it (the CHANGELOG is linked from the Files table).
