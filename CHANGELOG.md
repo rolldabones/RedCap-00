@@ -2,6 +2,15 @@
 
 All notable changes to this repository are documented here. Versioning follows [Semantic Versioning](https://semver.org/). The README, `CITATION.cff` and this file version in lockstep; prior versions are superseded, never silently overwritten.
 
+## v1.3.2 (2026-11-10, KST)
+
+Patch release. Train T-A of the improvement rotation (account review of 10 November 2026, High findings, rulings of Michael Paik of that day). Prepared with Claude, approved by Michael Paik.
+
+- README, Change control: the closing sentence said the block "is not accepted pending a logged run"; it now states that the T5 account is history and that the changed block (v1.2.4) with the revised Reference Pack (v1.2.6) is accepted on run R2 (26 October 2026), as the README status line, `tests.md` and ECOSYSTEM.md already did.
+- `tests.md`, Run T5: "has no logged run" and "`reference.md` is unchanged and still matches its digest" were false from v1.2.6; the T5 digest is now stated as true at v1.2.0, with the current digest under Run R2. The status line reads unchanged at v1.3.2.
+- `tests.md`, Run T5, Acceptance: "is **not accepted pending a logged run**" now records that run R2 accepted the changed block. The file header moves to v1.3.2, the release at which the file last changed.
+- README, `tests.md` and `CITATION.cff` to v1.3.2; no block, Reference Pack, case or run record changed; acceptance unchanged.
+
 ## v1.3.1 (2026-11-09, KST)
 
 Patch release. Train D of the improvement rotation (review of 24 October 2026). Prepared with Claude, approved by Michael Paik.
