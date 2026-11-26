@@ -1,8 +1,10 @@
 # RedCap-00
 
-**Version 1.3.2 · 10 November 2026 · Instrument, formerly the RedCap-00 custom GPT (retired 1 October 2026) · Instructions last mirrored from the GPT on 15 July 2026 (no verification date recorded), before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+> **Archived edition of 26 November 2026.** This repository is archived and read-only. It receives no corrections, legal ones included: verify every statement of law, regulation or standard against a current primary source before you rely on it. What I maintain, and why this repository is not part of it, is in [DISPOSITION.md](https://github.com/rolldabones/rolldabones/blob/main/DISPOSITION.md). Cite this edition as *RedCap-00*, v1.3.3 (26 November 2026). The license and [LICENSING.md](https://github.com/rolldabones/rolldabones/blob/main/LICENSING.md) still apply. Reach me at sonupaik@gmail.com. Its last test is stated under Last test below.
 
-**Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026, KST):** Accepted. Run R2 (26 October 2026) passed all 26 cases, critical cases S1 to S4 among them, on the published block with the Reference Pack as changed on 26 October 2026, in which K1 is closed (section 2 counts top-level bullets only). The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
+**Version 1.3.3 · 26 November 2026 · Archived edition · Instrument, formerly the RedCap-00 custom GPT (retired 1 October 2026) · Instructions last mirrored from the GPT on 15 July 2026 (no verification date recorded), before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+
+**Last test, as this edition (v1.3.3) records it ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026, KST):** Accepted. Run R2 (26 October 2026) passed all 26 cases, critical cases S1 to S4 among them, on the published block with the Reference Pack as changed on 26 October 2026, in which K1 is closed (section 2 counts top-level bullets only). Run on `claude-opus-5-5` and scored by `claude-sonnet-5-5`. No later run exists and none will be made. The run record and the known defects are in [`tests.md`](tests.md), and the transcripts stay in this repository where that file links them, frozen at tag v1.3.3; ask at sonupaik@gmail.com. The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
 > **Retired 1 October 2026 (KST).** The RedCap-00 custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -74,7 +76,7 @@ Nearest neighbors:
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-00*, v1.3.2. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
+> Paik, Son-U Michael. *RedCap-00*, v1.3.3. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-00
 
 A machine-readable citation of the same work is in [CITATION.cff](CITATION.cff). It names no publisher, because the Citation File Format has no top-level publisher field.
 

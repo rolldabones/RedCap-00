@@ -2,6 +2,14 @@
 
 All notable changes to this repository are documented here. Versioning follows [Semantic Versioning](https://semver.org/). The README, `CITATION.cff` and this file version in lockstep; prior versions are superseded, never silently overwritten.
 
+## v1.3.3 (2026-11-26, KST)
+
+Final release: the archived edition. On Michael Paik's ruling of 26 November 2026, recorded in [DISPOSITION.md](https://github.com/rolldabones/rolldabones/blob/main/DISPOSITION.md): the repository is archived in place as a dated edition and receives no corrections after this release. Prepared with Claude, approved by Michael Paik.
+
+- **README:** the archive banner under the title, with the edition date, the version to cite and where the maintained work is. Each acceptance line reads "Last test"; the status it states is unchanged, and no known defect is removed. The line says where the run record and the transcripts are and that they are frozen at this tag.
+- Nothing is removed, renamed or moved, and every other file is unchanged byte for byte.
+- README and `CITATION.cff` to v1.3.3.
+
 ## v1.3.2 (2026-11-10, KST)
 
 Patch release. Train T-A of the improvement rotation (account review of 10 November 2026, High findings, rulings of Michael Paik of that day). Prepared with Claude, approved by Michael Paik.
